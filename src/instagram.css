@@ -1,0 +1,41 @@
+/* Classic */
+
+.instagram--block .child {
+  float: left;
+  margin-bottom: 5px;
+  width: calc(calc(100% / 3) - 3.4px);
+}
+
+.instagram--block .child:not(:nth-child(3n + 1)) {
+  margin-left: 5px;
+}
+
+.instagram--block::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Flex */
+
+.instagram--flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instagram--flex .child {
+  flex-basis: calc(calc(100% / 3) - 3.4px);
+  margin-bottom: 5px;
+}
+
+.instagram--flex .child:not(:nth-child(3n + 1)) {
+  margin-left: 5px;
+}
+
+/* Grid */
+
+.instagram--grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+}

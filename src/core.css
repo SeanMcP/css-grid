@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 100vh;
+}
+
+.instagram {
+  border: 1px solid red;
+}
+
+.instagram .child {
+  border: 1px solid blue;
+}
+
+/* Forces square grids */
+.instagram .child::before {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  content: "";
+  padding-bottom: 100%;
+}
+
+.layout > * {
+  background: #ddd;
+}
